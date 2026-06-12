@@ -15,3 +15,10 @@
 - 対象専用の移行スクリプト名に対象フォルダ名を含める命名へ変更。
 - 外観検査記録DBの移行成果物名に `appearance_inspection_db` を含める命名へ変更。
 - 現品票検索DBの移行成果物名に `delivery_label_search_db` を含める命名へ変更。
+- `.docs/delivery_label_db` のAccess DBをPostgreSQLへ移行。
+- 現品票DB専用スクリプト `.docs/delivery_label_db/migrate_access_to_postgres_delivery_label_db.py` を追加。
+- 現品票DBの移行成果物名に `delivery_label_db` を含める命名で生成。
+- 稼働中Access DBとの差分追記用に、削除・初期化を行わない `--append-missing` を追加。
+- `.docs/secondary_process_record_db` のAccess DBをPostgreSQLへ移行。
+- 社内二次工程記録DB専用スクリプト `.docs/secondary_process_record_db/migrate_access_to_postgres_secondary_process_record_db.py` を追加。
+- 社内二次工程記録DBの移行成果物名に `secondary_process_record_db` を含める命名で生成。

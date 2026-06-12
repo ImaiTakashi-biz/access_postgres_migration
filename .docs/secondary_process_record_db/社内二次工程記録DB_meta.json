@@ -1,0 +1,2809 @@
+{
+  "database_path": "\\\\192.168.1.200\\共有\\生産管理課\\AccessDB\\社内二次工程記録DB.accdb",
+  "driver_used": "Microsoft Access Driver (*.mdb, *.accdb)",
+  "tables": [
+    {
+      "name": "t_カゴマスタ",
+      "table_type": "TABLE",
+      "row_count": 4,
+      "row_count_error": null,
+      "primary_key": [],
+      "columns": [
+        {
+          "name": "コード",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "カゴ",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 4,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(4)"
+        }
+      ],
+      "indexes": [],
+      "sample_headers": [
+        "コード",
+        "カゴ"
+      ],
+      "sample_rows": [
+        [
+          "01",
+          "カゴ大"
+        ],
+        [
+          "02",
+          "カゴ中"
+        ],
+        [
+          "03",
+          "カゴ小"
+        ],
+        [
+          "04",
+          "カゴ極小"
+        ]
+      ],
+      "column_stats": [
+        {
+          "column": "コード",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "カゴ",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        }
+      ]
+    },
+    {
+      "name": "t_バフ記録",
+      "table_type": "TABLE",
+      "row_count": 530,
+      "row_count_error": null,
+      "primary_key": [],
+      "columns": [
+        {
+          "name": "ID",
+          "access_type": "COUNTER",
+          "sql_data_type": 4,
+          "column_size": 10,
+          "decimal_digits": 0,
+          "nullable": false,
+          "postgres_type_hint": "BIGSERIAL"
+        },
+        {
+          "name": "作業日",
+          "access_type": "DATETIME",
+          "sql_data_type": 9,
+          "column_size": 19,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "TIMESTAMP"
+        },
+        {
+          "name": "品番",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "品名",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "客先",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "材質",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 35,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(35)"
+        },
+        {
+          "name": "製造日",
+          "access_type": "DATETIME",
+          "sql_data_type": 9,
+          "column_size": 19,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "TIMESTAMP"
+        },
+        {
+          "name": "製造日2",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "号機",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 5,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(5)"
+        },
+        {
+          "name": "数量",
+          "access_type": "INTEGER",
+          "sql_data_type": 4,
+          "column_size": 10,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "INTEGER"
+        },
+        {
+          "name": "作業者",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 6,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(6)"
+        },
+        {
+          "name": "作業者2",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 6,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(6)"
+        },
+        {
+          "name": "時間",
+          "access_type": "INTEGER",
+          "sql_data_type": 4,
+          "column_size": 10,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "INTEGER"
+        },
+        {
+          "name": "作業終了日",
+          "access_type": "DATETIME",
+          "sql_data_type": 9,
+          "column_size": 19,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "TIMESTAMP"
+        },
+        {
+          "name": "備考",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 20,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(20)"
+        }
+      ],
+      "indexes": [],
+      "sample_headers": [
+        "ID",
+        "作業日",
+        "品番",
+        "品名",
+        "客先",
+        "材質",
+        "製造日",
+        "製造日2",
+        "号機",
+        "数量",
+        "作業者",
+        "作業者2",
+        "時間",
+        "作業終了日",
+        "備考"
+      ],
+      "sample_rows": [
+        [
+          1,
+          "2016-03-10T00:00:00",
+          "M5X43",
+          "シャフトネジM5",
+          "タカシマ",
+          "SUS303 φ12.0CM",
+          "2016-03-10T00:00:00",
+          null,
+          "C-4",
+          193,
+          "新井",
+          "深田",
+          180,
+          "2016-03-10T00:00:00",
+          null
+        ],
+        [
+          2,
+          "2016-04-19T00:00:00",
+          "008929-001-01",
+          "シャフト",
+          "トラストパーツ",
+          "C5191 φ4.0",
+          "2016-04-19T00:00:00",
+          null,
+          "E-5",
+          1600,
+          "新井",
+          null,
+          360,
+          "2016-04-20T00:00:00",
+          null
+        ],
+        [
+          3,
+          "2016-04-13T00:00:00",
+          "125278",
+          "ジクB",
+          "タカシマ",
+          "SUS304 φ3.0G  2m",
+          "2016-04-11T00:00:00",
+          null,
+          "F-14",
+          1640,
+          "新井",
+          "深田",
+          360,
+          "2016-04-25T00:00:00",
+          null
+        ],
+        [
+          4,
+          "2016-04-21T00:00:00",
+          "008929-001-01",
+          "シャフト",
+          "トラストパーツ",
+          "C5191 φ4.0",
+          "2016-04-21T00:00:00",
+          null,
+          "E-5",
+          3320,
+          "新井",
+          null,
+          720,
+          "2016-04-26T00:00:00",
+          null
+        ],
+        [
+          5,
+          "2016-04-26T00:00:00",
+          "008929-001-01",
+          "シャフト",
+          "トラストパーツ",
+          "C5191 φ4.0",
+          "2016-04-21T00:00:00",
+          null,
+          "E-5",
+          980,
+          "新井",
+          null,
+          240,
+          "2016-04-27T00:00:00",
+          null
+        ]
+      ],
+      "column_stats": [
+        {
+          "column": "ID",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業日",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "品番",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "品名",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "客先",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "材質",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "製造日",
+          "null_count": 163,
+          "null_rate_pct": 30.8,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "製造日2",
+          "null_count": 417,
+          "null_rate_pct": 78.7,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "号機",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "数量",
+          "null_count": 14,
+          "null_rate_pct": 2.6,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業者",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業者2",
+          "null_count": 93,
+          "null_rate_pct": 17.5,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "時間",
+          "null_count": 96,
+          "null_rate_pct": 18.1,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業終了日",
+          "null_count": 1,
+          "null_rate_pct": 0.2,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "備考",
+          "null_count": 387,
+          "null_rate_pct": 73.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        }
+      ]
+    },
+    {
+      "name": "t_ブラスト記録",
+      "table_type": "TABLE",
+      "row_count": 4664,
+      "row_count_error": null,
+      "primary_key": [],
+      "columns": [
+        {
+          "name": "ID",
+          "access_type": "COUNTER",
+          "sql_data_type": 4,
+          "column_size": 10,
+          "decimal_digits": 0,
+          "nullable": false,
+          "postgres_type_hint": "BIGSERIAL"
+        },
+        {
+          "name": "作業日",
+          "access_type": "DATETIME",
+          "sql_data_type": 9,
+          "column_size": 19,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "TIMESTAMP"
+        },
+        {
+          "name": "品番",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "品名",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "客先",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "材質",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 35,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(35)"
+        },
+        {
+          "name": "製造日",
+          "access_type": "DATETIME",
+          "sql_data_type": 9,
+          "column_size": 19,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "TIMESTAMP"
+        },
+        {
+          "name": "製造日2",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "号機",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 5,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(5)"
+        },
+        {
+          "name": "数量",
+          "access_type": "INTEGER",
+          "sql_data_type": 4,
+          "column_size": 10,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "INTEGER"
+        },
+        {
+          "name": "作業者",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 6,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(6)"
+        },
+        {
+          "name": "処理時間",
+          "access_type": "INTEGER",
+          "sql_data_type": 4,
+          "column_size": 10,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "INTEGER"
+        },
+        {
+          "name": "圧力",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 8,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(8)"
+        },
+        {
+          "name": "次工程",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 8,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(8)"
+        },
+        {
+          "name": "カゴ",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 4,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(4)"
+        },
+        {
+          "name": "備考",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 20,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(20)"
+        }
+      ],
+      "indexes": [],
+      "sample_headers": [
+        "ID",
+        "作業日",
+        "品番",
+        "品名",
+        "客先",
+        "材質",
+        "製造日",
+        "製造日2",
+        "号機",
+        "数量",
+        "作業者",
+        "処理時間",
+        "圧力",
+        "次工程",
+        "カゴ",
+        "備考"
+      ],
+      "sample_rows": [
+        [
+          1,
+          "2016-02-22T00:00:00",
+          "2-663-108-01",
+          "キャップコンホルダー",
+          "ムサシ電子",
+          "SUS303 φ13.0CM",
+          "2016-02-22T00:00:00",
+          null,
+          "C-4",
+          1320,
+          "中川",
+          10,
+          "0.25",
+          "洗浄",
+          null,
+          null
+        ],
+        [
+          2,
+          "2016-02-23T00:00:00",
+          "WS-00026",
+          "WS-1 チョウセイネジB",
+          "鷺宮製作所",
+          "ASK2600S φ14.0CM",
+          "2016-02-22T00:00:00",
+          null,
+          "D-5",
+          1260,
+          "中川",
+          20,
+          "0.25",
+          "洗浄",
+          null,
+          "粉+1"
+        ],
+        [
+          3,
+          "2016-02-23T00:00:00",
+          "03-28296Z01-A",
+          "SCR,HDMI",
+          "トラストパーツ",
+          "ASK2600S φ7.5 ﾀﾃﾒR m=0.3",
+          "2016-02-19T00:00:00",
+          "2016/2/22",
+          "B-2",
+          3080,
+          "中川",
+          20,
+          "0.25",
+          "洗浄",
+          null,
+          "3080/2"
+        ],
+        [
+          4,
+          "2016-02-24T00:00:00",
+          "633950065",
+          "シャフト",
+          "秩父富士",
+          "C3604Lcd φ6.0",
+          "2016-01-06T00:00:00",
+          null,
+          "INI",
+          3000,
+          "中川",
+          20,
+          "0.25",
+          "遠心バレル",
+          "カゴ大",
+          null
+        ],
+        [
+          5,
+          "2016-02-25T00:00:00",
+          "KBS-3",
+          "エンドキャップ",
+          "ハギテック",
+          "C3604Lcd φ7.0",
+          "2015-05-23T00:00:00",
+          null,
+          "B-1",
+          590,
+          "中川",
+          10,
+          "0.25",
+          "洗浄",
+          "カゴ中",
+          null
+        ]
+      ],
+      "column_stats": [
+        {
+          "column": "ID",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業日",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "品番",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "品名",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "客先",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "材質",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "製造日",
+          "null_count": 35,
+          "null_rate_pct": 0.8,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "製造日2",
+          "null_count": 1417,
+          "null_rate_pct": 30.4,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "号機",
+          "null_count": 31,
+          "null_rate_pct": 0.7,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "数量",
+          "null_count": 11,
+          "null_rate_pct": 0.2,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業者",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "処理時間",
+          "null_count": 1,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "圧力",
+          "null_count": 4,
+          "null_rate_pct": 0.1,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "次工程",
+          "null_count": 4,
+          "null_rate_pct": 0.1,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "カゴ",
+          "null_count": 25,
+          "null_rate_pct": 0.5,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "備考",
+          "null_count": 1281,
+          "null_rate_pct": 27.5,
+          "unique_count": null,
+          "unique_rate_pct": null
+        }
+      ]
+    },
+    {
+      "name": "t_作業マスタ",
+      "table_type": "TABLE",
+      "row_count": 15,
+      "row_count_error": null,
+      "primary_key": [],
+      "columns": [
+        {
+          "name": "作業コード",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業名",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 15,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(15)"
+        }
+      ],
+      "indexes": [],
+      "sample_headers": [
+        "作業コード",
+        "作業名"
+      ],
+      "sample_rows": [
+        [
+          "01",
+          "荒洗浄"
+        ],
+        [
+          "02",
+          "洗浄"
+        ],
+        [
+          "03",
+          "除熱＋計量"
+        ],
+        [
+          "04",
+          "アブソール液交換"
+        ],
+        [
+          "05",
+          "ASK(自動)液交換"
+        ]
+      ],
+      "column_stats": [
+        {
+          "column": "作業コード",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業名",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        }
+      ]
+    },
+    {
+      "name": "t_作業者マスタ",
+      "table_type": "TABLE",
+      "row_count": 24,
+      "row_count_error": null,
+      "primary_key": [],
+      "columns": [
+        {
+          "name": "コード",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業者名",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 6,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(6)"
+        },
+        {
+          "name": "退職",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 1,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(1)"
+        }
+      ],
+      "indexes": [],
+      "sample_headers": [
+        "コード",
+        "作業者名",
+        "退職"
+      ],
+      "sample_rows": [
+        [
+          "23",
+          "嶋田",
+          "1"
+        ],
+        [
+          "24",
+          "宮本",
+          "1"
+        ],
+        [
+          "25",
+          "矢野",
+          "1"
+        ],
+        [
+          "26",
+          "小久保",
+          null
+        ],
+        [
+          "27",
+          "荒船",
+          null
+        ]
+      ],
+      "column_stats": [
+        {
+          "column": "コード",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業者名",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "退職",
+          "null_count": 10,
+          "null_rate_pct": 41.7,
+          "unique_count": null,
+          "unique_rate_pct": null
+        }
+      ]
+    },
+    {
+      "name": "t_使用ピンマスタ",
+      "table_type": "TABLE",
+      "row_count": 3,
+      "row_count_error": null,
+      "primary_key": [],
+      "columns": [
+        {
+          "name": "コード",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "ピン",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 5,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(5)"
+        }
+      ],
+      "indexes": [],
+      "sample_headers": [
+        "コード",
+        "ピン"
+      ],
+      "sample_rows": [
+        [
+          "02",
+          "0.2"
+        ],
+        [
+          "03",
+          "0.3"
+        ],
+        [
+          "04",
+          "0.5"
+        ]
+      ],
+      "column_stats": [
+        {
+          "column": "コード",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "ピン",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        }
+      ]
+    },
+    {
+      "name": "t_回転方向マスタ",
+      "table_type": "TABLE",
+      "row_count": 10,
+      "row_count_error": null,
+      "primary_key": [],
+      "columns": [
+        {
+          "name": "コード",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "回転方向",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 8,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(8)"
+        }
+      ],
+      "indexes": [],
+      "sample_headers": [
+        "コード",
+        "回転方向"
+      ],
+      "sample_rows": [
+        [
+          "01",
+          "R1,L1"
+        ],
+        [
+          "02",
+          "R1,L2"
+        ],
+        [
+          "03",
+          "R2,L1"
+        ],
+        [
+          "04",
+          "R2,L2"
+        ],
+        [
+          "05",
+          "R2,L3"
+        ]
+      ],
+      "column_stats": [
+        {
+          "column": "コード",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "回転方向",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        }
+      ]
+    },
+    {
+      "name": "t_圧力マスタ",
+      "table_type": "TABLE",
+      "row_count": 2,
+      "row_count_error": null,
+      "primary_key": [],
+      "columns": [
+        {
+          "name": "コード",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "圧力",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 8,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(8)"
+        }
+      ],
+      "indexes": [],
+      "sample_headers": [
+        "コード",
+        "圧力"
+      ],
+      "sample_rows": [
+        [
+          "01",
+          "0.25"
+        ],
+        [
+          "02",
+          "0.15"
+        ]
+      ],
+      "column_stats": [
+        {
+          "column": "コード",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "圧力",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        }
+      ]
+    },
+    {
+      "name": "t_機番マスタ",
+      "table_type": "TABLE",
+      "row_count": 94,
+      "row_count_error": null,
+      "primary_key": [],
+      "columns": [
+        {
+          "name": "機械ID",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 3,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(3)"
+        },
+        {
+          "name": "機番",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 5,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(5)"
+        }
+      ],
+      "indexes": [],
+      "sample_headers": [
+        "機械ID",
+        "機番"
+      ],
+      "sample_rows": [
+        [
+          "001",
+          "A-1"
+        ],
+        [
+          "002",
+          "A-2"
+        ],
+        [
+          "003",
+          "A-3"
+        ],
+        [
+          "004",
+          "A-4"
+        ],
+        [
+          "005",
+          "A-5"
+        ]
+      ],
+      "column_stats": [
+        {
+          "column": "機械ID",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "機番",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        }
+      ]
+    },
+    {
+      "name": "t_次工程マスタ",
+      "table_type": "TABLE",
+      "row_count": 4,
+      "row_count_error": null,
+      "primary_key": [],
+      "columns": [
+        {
+          "name": "コード",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "次工程",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 10,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(10)"
+        }
+      ],
+      "indexes": [],
+      "sample_headers": [
+        "コード",
+        "次工程"
+      ],
+      "sample_rows": [
+        [
+          "01",
+          "洗浄"
+        ],
+        [
+          "02",
+          "遠心バレル"
+        ],
+        [
+          "03",
+          "磁気バレル"
+        ],
+        [
+          "04",
+          "エアブロー"
+        ]
+      ],
+      "column_stats": [
+        {
+          "column": "コード",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "次工程",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        }
+      ]
+    },
+    {
+      "name": "t_洗浄工程日報",
+      "table_type": "TABLE",
+      "row_count": 5297,
+      "row_count_error": null,
+      "primary_key": [],
+      "columns": [
+        {
+          "name": "ID",
+          "access_type": "COUNTER",
+          "sql_data_type": 4,
+          "column_size": 10,
+          "decimal_digits": 0,
+          "nullable": false,
+          "postgres_type_hint": "BIGSERIAL"
+        },
+        {
+          "name": "日付",
+          "access_type": "DATETIME",
+          "sql_data_type": 9,
+          "column_size": 19,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "TIMESTAMP"
+        },
+        {
+          "name": "曜日",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 1,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(1)"
+        },
+        {
+          "name": "作業者コード",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業コード1",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業コード2",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業コード3",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業コード4",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業コード5",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業コード6",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業コード7",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業コード8",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業コード9",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業コード10",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業コード11",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業コード12",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業コード13",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業コード14",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業コード15",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業コード16",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業コード17",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "作業コード18",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        }
+      ],
+      "indexes": [],
+      "sample_headers": [
+        "ID",
+        "日付",
+        "曜日",
+        "作業者コード",
+        "作業コード1",
+        "作業コード2",
+        "作業コード3",
+        "作業コード4",
+        "作業コード5",
+        "作業コード6",
+        "作業コード7",
+        "作業コード8",
+        "作業コード9",
+        "作業コード10",
+        "作業コード11",
+        "作業コード12",
+        "作業コード13",
+        "作業コード14",
+        "作業コード15",
+        "作業コード16",
+        "作業コード17",
+        "作業コード18"
+      ],
+      "sample_rows": [
+        [
+          27,
+          "2017-03-27T00:00:00",
+          "月",
+          "01",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "09",
+          "09"
+        ],
+        [
+          28,
+          "2017-03-28T00:00:00",
+          "火",
+          "01",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "12",
+          "12",
+          "02",
+          "12",
+          "12",
+          "06",
+          "06",
+          "06",
+          "06",
+          "06",
+          "06"
+        ],
+        [
+          29,
+          "2017-03-29T00:00:00",
+          "水",
+          "01",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "09",
+          "09",
+          "09",
+          "09",
+          "09",
+          "09",
+          "09"
+        ],
+        [
+          30,
+          "2017-03-30T00:00:00",
+          "木",
+          "01",
+          "90",
+          "90",
+          "90",
+          "90",
+          "90",
+          "90",
+          "90",
+          "02",
+          "12",
+          "02",
+          "02",
+          "04",
+          "04",
+          "04",
+          "04",
+          "04",
+          "11",
+          "11"
+        ],
+        [
+          31,
+          "2017-03-31T00:00:00",
+          "金",
+          "01",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "02",
+          "11",
+          "11",
+          "11",
+          "11",
+          "11",
+          "11",
+          "11",
+          "11"
+        ]
+      ],
+      "column_stats": [
+        {
+          "column": "ID",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "日付",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "曜日",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業者コード",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業コード1",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業コード2",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業コード3",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業コード4",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業コード5",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業コード6",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業コード7",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業コード8",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業コード9",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業コード10",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業コード11",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業コード12",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業コード13",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業コード14",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業コード15",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業コード16",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業コード17",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業コード18",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        }
+      ]
+    },
+    {
+      "name": "t_研磨石マスタ",
+      "table_type": "TABLE",
+      "row_count": 17,
+      "row_count_error": null,
+      "primary_key": [],
+      "columns": [
+        {
+          "name": "コード",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 2,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(2)"
+        },
+        {
+          "name": "研磨石",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 10,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(10)"
+        }
+      ],
+      "indexes": [],
+      "sample_headers": [
+        "コード",
+        "研磨石"
+      ],
+      "sample_rows": [
+        [
+          "05",
+          "粗△極小"
+        ],
+        [
+          "10",
+          "粗△小"
+        ],
+        [
+          "15",
+          "粗△中小"
+        ],
+        [
+          "20",
+          "粗△中"
+        ],
+        [
+          "25",
+          "粗△大"
+        ]
+      ],
+      "column_stats": [
+        {
+          "column": "コード",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "研磨石",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        }
+      ]
+    },
+    {
+      "name": "t_磁気バレル記録",
+      "table_type": "TABLE",
+      "row_count": 16111,
+      "row_count_error": null,
+      "primary_key": [],
+      "columns": [
+        {
+          "name": "ID",
+          "access_type": "COUNTER",
+          "sql_data_type": 4,
+          "column_size": 10,
+          "decimal_digits": 0,
+          "nullable": false,
+          "postgres_type_hint": "BIGSERIAL"
+        },
+        {
+          "name": "作業日",
+          "access_type": "DATETIME",
+          "sql_data_type": 9,
+          "column_size": 19,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "TIMESTAMP"
+        },
+        {
+          "name": "品番",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "品名",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "客先",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "材質",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 35,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(35)"
+        },
+        {
+          "name": "製造日",
+          "access_type": "DATETIME",
+          "sql_data_type": 9,
+          "column_size": 19,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "TIMESTAMP"
+        },
+        {
+          "name": "製造日2",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "号機",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 5,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(5)"
+        },
+        {
+          "name": "数量",
+          "access_type": "INTEGER",
+          "sql_data_type": 4,
+          "column_size": 10,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "INTEGER"
+        },
+        {
+          "name": "作業者",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 6,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(6)"
+        },
+        {
+          "name": "使用ピン",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 5,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(5)"
+        },
+        {
+          "name": "回転方向",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 8,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(8)"
+        },
+        {
+          "name": "回転数",
+          "access_type": "INTEGER",
+          "sql_data_type": 4,
+          "column_size": 10,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "INTEGER"
+        },
+        {
+          "name": "時間",
+          "access_type": "INTEGER",
+          "sql_data_type": 4,
+          "column_size": 10,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "INTEGER"
+        },
+        {
+          "name": "作業LOT",
+          "access_type": "INTEGER",
+          "sql_data_type": 4,
+          "column_size": 10,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "INTEGER"
+        },
+        {
+          "name": "備考",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 20,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(20)"
+        }
+      ],
+      "indexes": [],
+      "sample_headers": [
+        "ID",
+        "作業日",
+        "品番",
+        "品名",
+        "客先",
+        "材質",
+        "製造日",
+        "製造日2",
+        "号機",
+        "数量",
+        "作業者",
+        "使用ピン",
+        "回転方向",
+        "回転数",
+        "時間",
+        "作業LOT",
+        "備考"
+      ],
+      "sample_rows": [
+        [
+          2,
+          "2016-02-22T00:00:00",
+          "WV5021900",
+          "FVA50ﾁｮｳｾｲｼﾞｸ1.6*32.5",
+          "サノハツ",
+          "SUS303 φ2.0G 2.1m",
+          "2016-02-22T00:00:00",
+          null,
+          "E-9",
+          2780,
+          "新井",
+          "0.5",
+          "R2.L3",
+          70,
+          15,
+          1000,
+          null
+        ],
+        [
+          3,
+          "2016-02-23T00:00:00",
+          "VHN0382",
+          "M6ナット",
+          "山一精工",
+          "SUS303 φ8.0D",
+          "2016-02-23T00:00:00",
+          null,
+          "A-4",
+          6700,
+          "新井",
+          "0.3",
+          "R3.L3",
+          80,
+          8,
+          1000,
+          "1000～1300"
+        ],
+        [
+          4,
+          "2016-02-24T00:00:00",
+          "VHN0382",
+          "M6ナット",
+          "山一精工",
+          "SUS303 φ8.0D",
+          "2016-02-24T00:00:00",
+          null,
+          "A-4",
+          1000,
+          "新井",
+          "0.3",
+          "R3.L3",
+          80,
+          8,
+          1000,
+          "1000～1300"
+        ],
+        [
+          5,
+          "2016-03-02T00:00:00",
+          "008841-001-01",
+          "センターギヤシャフト",
+          "トラストパーツ",
+          "SUS303 φ5.0CM",
+          "2016-03-02T00:00:00",
+          null,
+          "E-8",
+          3280,
+          "深田",
+          "0.3",
+          "R2.L2",
+          65,
+          6,
+          500,
+          null
+        ],
+        [
+          6,
+          "2016-03-04T00:00:00",
+          "008841-001-01",
+          "センターギヤシャフト",
+          "トラストパーツ",
+          "SUS303 φ5.0CM",
+          "2016-03-03T00:00:00",
+          null,
+          "E-8",
+          1718,
+          "新井",
+          "0.3",
+          "R2.L2",
+          65,
+          6,
+          500,
+          null
+        ]
+      ],
+      "column_stats": [
+        {
+          "column": "ID",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業日",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "品番",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "品名",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "客先",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "材質",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "製造日",
+          "null_count": 2,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "製造日2",
+          "null_count": 922,
+          "null_rate_pct": 5.7,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "号機",
+          "null_count": 4,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "数量",
+          "null_count": 2,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業者",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "使用ピン",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "回転方向",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "回転数",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "時間",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業LOT",
+          "null_count": 3,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "備考",
+          "null_count": 880,
+          "null_rate_pct": 5.5,
+          "unique_count": null,
+          "unique_rate_pct": null
+        }
+      ]
+    },
+    {
+      "name": "t_製品マスタ",
+      "table_type": "TABLE",
+      "row_count": 4543,
+      "row_count_error": null,
+      "primary_key": [],
+      "columns": [
+        {
+          "name": "品番",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "品名",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "客先",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "材質材料径",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "ID",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 6,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(6)"
+        }
+      ],
+      "indexes": [],
+      "sample_headers": [
+        "品番",
+        "品名",
+        "客先",
+        "材質材料径",
+        "ID"
+      ],
+      "sample_rows": [
+        [
+          "0061M-02",
+          "FP-5C-P1ナット",
+          "木村電気工業",
+          "C3604（一般） Hex13.0",
+          "A00050"
+        ],
+        [
+          "0061M-04",
+          "FP-5C-P1シェル",
+          "木村電気工業",
+          "C3604（一般） Hex13.0",
+          "A00051"
+        ],
+        [
+          "0061M-06",
+          "FP-5C-P1締付金具",
+          "木村電気工業",
+          "C3604Lcd Hex14.0",
+          "A00052"
+        ],
+        [
+          "0061M-07",
+          "FP-5C-P1フェルール",
+          "木村電気工業",
+          "C3604（一般） φ12.0",
+          "A00053"
+        ],
+        [
+          "0061M-09",
+          "FP-5C-P1クランプ",
+          "木村電気工業",
+          "C3604（一般） φ10.0",
+          "A00054"
+        ]
+      ],
+      "column_stats": [
+        {
+          "column": "品番",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "品名",
+          "null_count": 12,
+          "null_rate_pct": 0.3,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "客先",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "材質材料径",
+          "null_count": 67,
+          "null_rate_pct": 1.5,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "ID",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        }
+      ]
+    },
+    {
+      "name": "t_遠心バレル記録",
+      "table_type": "TABLE",
+      "row_count": 4454,
+      "row_count_error": null,
+      "primary_key": [],
+      "columns": [
+        {
+          "name": "ID",
+          "access_type": "COUNTER",
+          "sql_data_type": 4,
+          "column_size": 10,
+          "decimal_digits": 0,
+          "nullable": false,
+          "postgres_type_hint": "BIGSERIAL"
+        },
+        {
+          "name": "作業日",
+          "access_type": "DATETIME",
+          "sql_data_type": 9,
+          "column_size": 19,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "TIMESTAMP"
+        },
+        {
+          "name": "品番",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "品名",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "客先",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "材質",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 35,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(35)"
+        },
+        {
+          "name": "製造日",
+          "access_type": "DATETIME",
+          "sql_data_type": 9,
+          "column_size": 19,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "TIMESTAMP"
+        },
+        {
+          "name": "製造日2",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 30,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(30)"
+        },
+        {
+          "name": "号機",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 5,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(5)"
+        },
+        {
+          "name": "数量",
+          "access_type": "INTEGER",
+          "sql_data_type": 4,
+          "column_size": 10,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "INTEGER"
+        },
+        {
+          "name": "作業者",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 6,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(6)"
+        },
+        {
+          "name": "研磨石1",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 10,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(10)"
+        },
+        {
+          "name": "時間1",
+          "access_type": "INTEGER",
+          "sql_data_type": 4,
+          "column_size": 10,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "INTEGER"
+        },
+        {
+          "name": "研磨石2",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 10,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(10)"
+        },
+        {
+          "name": "時間2",
+          "access_type": "INTEGER",
+          "sql_data_type": 4,
+          "column_size": 10,
+          "decimal_digits": 0,
+          "nullable": true,
+          "postgres_type_hint": "INTEGER"
+        },
+        {
+          "name": "備考",
+          "access_type": "VARCHAR",
+          "sql_data_type": -9,
+          "column_size": 20,
+          "decimal_digits": null,
+          "nullable": true,
+          "postgres_type_hint": "VARCHAR(20)"
+        }
+      ],
+      "indexes": [],
+      "sample_headers": [
+        "ID",
+        "作業日",
+        "品番",
+        "品名",
+        "客先",
+        "材質",
+        "製造日",
+        "製造日2",
+        "号機",
+        "数量",
+        "作業者",
+        "研磨石1",
+        "時間1",
+        "研磨石2",
+        "時間2",
+        "備考"
+      ],
+      "sample_rows": [
+        [
+          1,
+          "2016-02-22T00:00:00",
+          "JA000420",
+          "PIN",
+          "イワタボルト",
+          "S20C φ10.0D  1.5m",
+          "2016-02-17T00:00:00",
+          null,
+          "C-5",
+          3530,
+          "中川",
+          "粗△中小",
+          7,
+          null,
+          null,
+          "3530/8"
+        ],
+        [
+          2,
+          "2016-02-23T00:00:00",
+          "JA000420",
+          "PIN",
+          "イワタボルト",
+          "S20C φ10.0D  1.5m",
+          "2016-02-19T00:00:00",
+          null,
+          "C-5",
+          4030,
+          "中川",
+          "粗△中小",
+          7,
+          null,
+          null,
+          "4030/9"
+        ],
+        [
+          3,
+          "2016-02-24T00:00:00",
+          "WV5021900",
+          "FVA50ﾁｮｳｾｲｼﾞｸ1.6*32.5",
+          "サノハツ",
+          "SUS303 φ2.0G 2.1m",
+          "2016-02-22T00:00:00",
+          null,
+          "E-9",
+          370,
+          "柴岡",
+          "粗△中小",
+          5,
+          "みがき",
+          8,
+          "△中　5分　ボッチ"
+        ],
+        [
+          4,
+          "2016-02-24T00:00:00",
+          "8982720170012",
+          "DISTANCE PIECE",
+          "イワタボルト",
+          "C3604Lcd φ10.0",
+          "2016-02-24T00:00:00",
+          null,
+          "D-10",
+          2050,
+          "柴岡",
+          "粗○極小",
+          8,
+          null,
+          null,
+          "ヒゲバリ取り"
+        ],
+        [
+          5,
+          "2016-02-24T00:00:00",
+          "000003-0234-1-00",
+          "オートポンチL",
+          "東泉産業",
+          "S45CL2 φ14.0D",
+          "2016-02-19T00:00:00",
+          null,
+          "Ｃ-4",
+          915,
+          "中川",
+          "みがき△中",
+          5,
+          null,
+          null,
+          "915/10"
+        ]
+      ],
+      "column_stats": [
+        {
+          "column": "ID",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業日",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "品番",
+          "null_count": 2,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "品名",
+          "null_count": 1,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "客先",
+          "null_count": 2,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "材質",
+          "null_count": 1,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "製造日",
+          "null_count": 58,
+          "null_rate_pct": 1.3,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "製造日2",
+          "null_count": 1540,
+          "null_rate_pct": 34.6,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "号機",
+          "null_count": 45,
+          "null_rate_pct": 1.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "数量",
+          "null_count": 18,
+          "null_rate_pct": 0.4,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "作業者",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "研磨石1",
+          "null_count": 0,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "時間1",
+          "null_count": 1,
+          "null_rate_pct": 0.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "研磨石2",
+          "null_count": 1395,
+          "null_rate_pct": 31.3,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "時間2",
+          "null_count": 3975,
+          "null_rate_pct": 89.2,
+          "unique_count": null,
+          "unique_rate_pct": null
+        },
+        {
+          "column": "備考",
+          "null_count": 488,
+          "null_rate_pct": 11.0,
+          "unique_count": null,
+          "unique_rate_pct": null
+        }
+      ]
+    }
+  ],
+  "views_and_queries": [],
+  "relationships": [],
+  "vba_modules": [],
+  "warnings": [
+    "FK 取得スキップ: t_カゴマスタ — ('IM001', '[IM001] [Microsoft][ODBC Driver Manager] ドライバーはこの関数をサポートしていません。 (0) (SQLForeignKeys)')",
+    "FK 取得スキップ: t_バフ記録 — ('IM001', '[IM001] [Microsoft][ODBC Driver Manager] ドライバーはこの関数をサポートしていません。 (0) (SQLForeignKeys)')",
+    "FK 取得スキップ: t_ブラスト記録 — ('IM001', '[IM001] [Microsoft][ODBC Driver Manager] ドライバーはこの関数をサポートしていません。 (0) (SQLForeignKeys)')",
+    "FK 取得スキップ: t_作業マスタ — ('IM001', '[IM001] [Microsoft][ODBC Driver Manager] ドライバーはこの関数をサポートしていません。 (0) (SQLForeignKeys)')",
+    "FK 取得スキップ: t_作業者マスタ — ('IM001', '[IM001] [Microsoft][ODBC Driver Manager] ドライバーはこの関数をサポートしていません。 (0) (SQLForeignKeys)')",
+    "FK 取得スキップ: t_使用ピンマスタ — ('IM001', '[IM001] [Microsoft][ODBC Driver Manager] ドライバーはこの関数をサポートしていません。 (0) (SQLForeignKeys)')",
+    "FK 取得スキップ: t_回転方向マスタ — ('IM001', '[IM001] [Microsoft][ODBC Driver Manager] ドライバーはこの関数をサポートしていません。 (0) (SQLForeignKeys)')",
+    "FK 取得スキップ: t_圧力マスタ — ('IM001', '[IM001] [Microsoft][ODBC Driver Manager] ドライバーはこの関数をサポートしていません。 (0) (SQLForeignKeys)')",
+    "FK 取得スキップ: t_機番マスタ — ('IM001', '[IM001] [Microsoft][ODBC Driver Manager] ドライバーはこの関数をサポートしていません。 (0) (SQLForeignKeys)')",
+    "FK 取得スキップ: t_次工程マスタ — ('IM001', '[IM001] [Microsoft][ODBC Driver Manager] ドライバーはこの関数をサポートしていません。 (0) (SQLForeignKeys)')",
+    "FK 取得スキップ: t_洗浄工程日報 — ('IM001', '[IM001] [Microsoft][ODBC Driver Manager] ドライバーはこの関数をサポートしていません。 (0) (SQLForeignKeys)')",
+    "FK 取得スキップ: t_研磨石マスタ — ('IM001', '[IM001] [Microsoft][ODBC Driver Manager] ドライバーはこの関数をサポートしていません。 (0) (SQLForeignKeys)')",
+    "FK 取得スキップ: t_磁気バレル記録 — ('IM001', '[IM001] [Microsoft][ODBC Driver Manager] ドライバーはこの関数をサポートしていません。 (0) (SQLForeignKeys)')",
+    "FK 取得スキップ: t_製品マスタ — ('IM001', '[IM001] [Microsoft][ODBC Driver Manager] ドライバーはこの関数をサポートしていません。 (0) (SQLForeignKeys)')",
+    "FK 取得スキップ: t_遠心バレル記録 — ('IM001', '[IM001] [Microsoft][ODBC Driver Manager] ドライバーはこの関数をサポートしていません。 (0) (SQLForeignKeys)')",
+    "VBA 抽出失敗: (-2147352567, '例外が発生しました。', (0, None, '指定した式に、Visible プロパティに対する正しくない参照が含まれます。', 'dao360.chm', 2015567, -2146825833), None)"
+  ]
+}
