@@ -24,9 +24,9 @@ from psycopg2.extras import execute_values
 
 TARGET_DIR = Path(__file__).resolve().parent
 META_FILE = "外観検査記録DB_meta.json"
-RESULT_FILE = "migration_result.md"
-MAPPING_FILE = "migration_mapping.md"
-ERROR_LOG_FILE = "migration_error.log"
+RESULT_FILE = "migration_result_appearance_inspection_db.md"
+MAPPING_FILE = "migration_mapping_appearance_inspection_db.md"
+ERROR_LOG_FILE = "migration_error_appearance_inspection_db.log"
 DEFAULT_SCHEMA = "public"
 DEFAULT_BATCH_SIZE = 1000
 
