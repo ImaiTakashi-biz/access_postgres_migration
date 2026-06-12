@@ -1,0 +1,10 @@
+[project]
+name = "access-modernization-platform"
+version = "0.1.0"
+description = "Access DB to PostgreSQL migration platform"
+requires-python = ">=3.12,<3.13"
+readme = "README.md"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

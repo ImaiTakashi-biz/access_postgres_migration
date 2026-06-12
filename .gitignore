@@ -1,0 +1,43 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+
+# Test / lint / coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Access database files
+*.accdb
+*.mdb
+*.laccdb
+*.ldb
+
+# Logs
+logs/**/*.log
+logs/*.log
+!logs/.gitkeep
+
+# Generated output
+output/*
+!output/.gitkeep
+
+# Editor / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
